@@ -24,7 +24,7 @@ import { ListMultiplosComponent } from './components/list-multiplos/list-multipl
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig), // Psamos la configuración de firebases
+    AngularFireModule.initializeApp(environment.firebaseConfig), // Pasamos la configuración de firebases
     AngularFireAuthModule,
     AngularFirestoreModule
   ],

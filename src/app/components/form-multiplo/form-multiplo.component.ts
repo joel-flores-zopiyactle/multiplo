@@ -72,6 +72,7 @@ export class FormMultiploComponent implements OnInit {
       await this.multiploService.registerMultiplo(payload);
       
     } catch(e) {
+      this.messageAlert = `No se pudo llevar a cabo la operación con exito`
       console.log(e)
     }
 
