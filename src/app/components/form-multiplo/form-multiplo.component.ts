@@ -39,20 +39,22 @@ export class FormMultiploComponent implements OnInit {
     
     // Recorre el array de multiplos
     this.multiplos.forEach( m => {
-      // Comprueba que la entrada sea multiplo de un numero multiplo
-      let res = input % m;
-
-
-      //  Si el resultado es 0, m es multiplo de entrada
-      if(res === 0) {
-
-        this.result.push(m);
-
-        // Asigno el color del tipo de multiplo
-        this.textColor = this.multiploService.changeColorText(this.result)
+      
+      let resultValues = []
+    
+      for (let i = 0; i < input; i+= m) {
+        //  Si el resultado es 0, i es multiplo de la entrada
+        if((input % i) === 0) {
+            resultValues.push(i)
+        }        
       }
 
+      this.result.push(...resultValues)
+      resultValues = []   
     }) 
+
+    // Asigno el color del tipo de multiplo
+    this.textColor = this.multiploService.changeColorText(this.result)
     
     this.result.length > 0 ? 
     this.saveMultiplo(input) : 
