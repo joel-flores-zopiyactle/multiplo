@@ -1,0 +1,29 @@
+<div class="w-100 vh-100 container d-flex justify-content-center">
+    <!-- Container -->
+    <div>
+        <div class="text-center my-3">
+            <a routerLink="/" class="btn btn-primary">Regresar</a>
+        </div>
+        
+        <div class="card shadow p-2 mb-5">
+            <table class="table table-borderless text-center table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                      <th scope="col">Número ingresado</th>
+                      <th scope="col">Múltiplos</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr *ngFor="let m of multiplos; let i=index;">
+                        <td>{{ m.number }}</td>
+                        <td>
+                            <b [class]="getColorText( m.multiplos)"> [{{ m.multiplos }}] </b>  
+                        </td>
+                    </tr>
+                </tbody>    
+            </table>
+        </div>
+    </div>
+</div>
+
