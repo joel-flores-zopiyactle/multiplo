@@ -56,7 +56,7 @@ export class FormMultiploComponent implements OnInit {
     
     this.result.length > 0 ? 
     this.saveMultiplo(input) : 
-    this.messageAlert = `No hay multiplo para para el valor ${input} que ingreso`
+    this.messageAlert = `No hay múltiplo para el valor ${input} que ingreso`
 }
 
 

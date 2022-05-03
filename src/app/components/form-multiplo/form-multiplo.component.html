@@ -1,11 +1,11 @@
 <div class="w-100 vh-100 container d-flex justify-content-center align-items-center">
     <div>
       <div class="text-center mb-3">
-        <a routerLink="/list-multiplos" class="btn btn-primary">Lista de los mútiplos comprobados</a>
+        <a routerLink="/list-multiplos" class="btn btn-primary">Listado de los números comprobados</a>
       </div>  
     
       <div class="card p-5 shadow-lg bg-body rounded">
-        <h2 class="h4">Buscar el multipló de {{ multiplos }}</h2>
+        <h2 class="h4">Buscar el múltiplo de {{ multiplos }}</h2>
         <hr>
     
         <form class="mt-3" [formGroup]="multiploForm" (ngSubmit)="verifyMultiplo()">

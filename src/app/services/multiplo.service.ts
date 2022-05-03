@@ -31,7 +31,7 @@ export class MultiploService {
     })
   }
 
-  // Asigna los colores de los multiplos
+  // Asigna los colores a los multiplos de [3,5,7]
   changeColorText(result:any):string {
 
     if(result[0] === 3) {
