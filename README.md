@@ -16,6 +16,11 @@ npm install
 ```bash
 ng serve -o
 ```
+
+### Compilar aplicación
+```bash
+ng build
+```
 o también puedo ejecutar la aplicacion yendo a la siguiente enlace
 [https://angular-firebase-multiplo.web.app/]
 
